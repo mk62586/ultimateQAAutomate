@@ -24,49 +24,49 @@ class Home{
         return cy.title()
     }
     buttonID(){
-        return cy.get(buttId).click()
+        return cy.get(buttId)
     }
     sucessID(){
         return cy.get(success)
     }
     like(){
-        return cy.get(like).click()
+        return cy.get(like)
     }
     ClickableIcon(){
-        return cy.get(main).contains("Clickable Icon").click()
+        return cy.get(main).contains("Clickable Icon")
     }
     sucessLink(){
       return cy.get(linkSccuess)
     }
     radioM(){
-      return cy.get(male).wait(3000).click()
+      return cy.get(male)
     }
      radioF(){
-        return cy.get(female).wait(3000).click()
+        return cy.get(female)
     }
      radioO(){
-        return cy.get(other).click()
+        return cy.get(other)
     }
      checkboxesBike(){
-         return cy.get(bike).click()
+         return cy.get(bike)
     }
      checkboxesCar(){
-        return cy.get(car).click()
+        return cy.get(car)
      }
      dropDownVolvo(){
-        return cy.get(volvo).select("volvo")
+        return cy.get(volvo)
      }
      dropDownSaab(){
-        return cy.get(saab).select("saab",{force:true})
+        return cy.get(saab)
      }
      name(){
-         return cy.get(nameFill).type("Mukesh")
+         return cy.get(nameFill)
      }
      email(){
-        return cy.get(emailfil).type("ak444@gmail.com")
+        return cy.get(emailfil)
     }
     submit(){
-        return cy.get(submitButton).click()
+        return cy.get(submitButton)
     }
     contains(){
         return cy.get(contains).contains("Thanks for contacting us")

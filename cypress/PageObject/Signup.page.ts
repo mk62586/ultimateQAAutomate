@@ -15,28 +15,28 @@ class Account{
         return cy.title()
 }
  clickLogin(){
-    return cy.get(loginPage).contains("Go to login page").click()
+    return cy.get(loginPage).contains("Go to login page")
 }
 createAcc(){
-    return cy.get(createAccount).contains("Create a new account").click()
+    return cy.get(createAccount).contains("Create a new account")
 }
-firstName(value:any){
-    return cy.get(firstName).type(value)
+firstName(){
+    return cy.get(firstName)
 }
-lastName(value:any){
-    return cy.get(lastName).type(value)
+lastName(){
+    return cy.get(lastName)
 }
-email(value){
-    return cy.get(email).type(value)
+email(){
+    return cy.get(email)
 }
-password(value:any){
-    return cy.get(password).type(value)
+password(){
+    return cy.get(password)
 }
 terms_Cond(){
-    return cy.get(terms).click()
+    return cy.get(terms)
 }
 submit(){
-    return cy.get(submit).click({timeout:4000})
+    return cy.get(submit)
 }
 checkName(){
     return cy.get(check).contains("Alex M")
@@ -46,6 +46,6 @@ verify(){
 }
 passwordLength(){
     return cy.get(verfiyterm)
-}
+  }
 }
 export default new Account

@@ -11,16 +11,16 @@ class LoginAccount{
     return cy.title()
    }
   clickLogin(){
-       return cy.get(loginPage).contains("Go to login page").click()
+       return cy.get(loginPage).contains("Go to login page")
    }
-   userName(value:any){
-       return cy.get(email).type(value)
+   userName(){
+       return cy.get(email)
    }
-   userPass(value:any){
-    return cy.get(password).type(value)
+   userPass(){
+    return cy.get(password)
   }
     userSubmit(){
-    return cy.get(submit).click()
+    return cy.get(submit)
   }
   checkName(){
     return cy.get(check).contains("Alex M")

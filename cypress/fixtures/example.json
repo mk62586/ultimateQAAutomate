@@ -4,7 +4,8 @@
   "body": "Fixtures are a great way to mock data for responses to routes",
   "firstName":"Alex",
   "lastName":"Matty",
-  "email1":"alex12632@gmail.com",
+  "email1":"alex12631@gmail.com",
   "password":"alex1234@",
-  "passwordFalse":"alex14"
+  "passwordFalse":"alex14",
+  "url":"https://ultimateqa.com/simple-html-elements-for-automation/"
 }
